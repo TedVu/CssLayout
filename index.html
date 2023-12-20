@@ -18,6 +18,7 @@
         display: -moz-flex;
         display: -webkit-flex;
         display: flex;
+        justify-content: space-between;
       }
 
       .nowrap {
@@ -42,6 +43,24 @@
       }
 
       .flex-item {
+        flex-grow: 1;
+        background: tomato;
+        padding: 5px;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+
+        line-height: 100px;
+        color: white;
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
+      }
+
+      .flex-item-2 {
+        order: 4;
+        flex-shrink: 2;
+        flex-basis: 0%;
         background: tomato;
         padding: 5px;
         width: 100px;
@@ -59,7 +78,7 @@
   <body>
     <ul class="flex-container nowrap">
       <li class="flex-item">1</li>
-      <li class="flex-item">2</li>
+      <li class="flex-item-2">2</li>
       <li class="flex-item">3</li>
       <li class="flex-item">4</li>
       <li class="flex-item">5</li>
